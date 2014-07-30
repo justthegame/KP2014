@@ -1,3 +1,8 @@
 a_positive_homepage:
     path:     /index
     defaults: { _controller: APositiveBundle:Default:index }
+
+a_positive_about:
+    path:     /about
+    defaults: { _controller: APositiveBundle:Default:about }
+

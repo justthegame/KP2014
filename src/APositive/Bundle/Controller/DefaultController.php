@@ -10,4 +10,8 @@ class DefaultController extends Controller
     {
         return $this->render('APositiveBundle:Default:index.html.twig', array());
     }
+    public function aboutAction()
+    {
+        return $this->render('APositiveBundle:Default:about.html.twig', array());
+    }
 }
