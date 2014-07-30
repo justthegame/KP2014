@@ -1,0 +1,7 @@
+a_positive_test_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: APositiveTestBundle:Default:index }
+
+halaman_coba:
+    path: /coba
+    defaults: { _controller: APositiveTestBundle:Coba:index }

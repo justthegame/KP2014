@@ -1,0 +1,3 @@
+a_positive_test:
+    resource: "@APositiveTestBundle/Resources/config/routing.yml"
+    prefix:   /    
