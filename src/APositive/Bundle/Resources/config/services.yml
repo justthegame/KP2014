@@ -1,0 +1,7 @@
+parameters:
+#    a_positive.example.class: APositive\Bundle\Example
+
+services:
+#    a_positive.example:
+#        class: %a_positive.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
