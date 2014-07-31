@@ -20,6 +20,11 @@ body{
 
 .footer{
     margin-top: 20px;
+    height: auto;
+}
+
+.footer div{
+    padding: 5px;
 }
 
 .konten{
