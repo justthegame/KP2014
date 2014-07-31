@@ -13,6 +13,7 @@ body{
 }
 
 .gambar{
+    margin: 0 auto;
     width: 130px;
     height: 130px;
 }
@@ -21,6 +22,85 @@ body{
     margin-top: 20px;
 }
 
-.navigasi{
+.konten{
+    z-index: 0;
+}
+
+.dropdown-menu .sub-menu {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    visibility: hidden;
+    margin-top: -1px;
+}
+.dropdown-menu li:hover .sub-menu {
+    visibility: visible;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+i.glyphicon-arrow-right{
+    position: absolute;
+    left: 80%;
+    top:30%;
+}
+
+.col-xs-6.navigasi{
+    position: relative;
+    top:0px;
+    background-color: white;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background-color: white;
+    color:silver;
+}
+
+.nav li a{
+    color:black;
+}
+
+.nav li a:hover{
+    color:black;
+}
+
+@media (min-width: 992px) {
+    .col-sm-6.navigasi{
+        position: relative;
+        top:0px;
+        background-color: white;
+    }
+}
+@media (min-width: 992px) {
+    .col-md-2.navigasi{
+        position: fixed;
+        top:50px;
+        background-color: black;
+        z-index: 100;
+    }
     
+    .nav li a{
+        color:silver;
+    }
+
+    .nav li a:hover{
+        color:black;
+    }
+    
+    .dropdown-menu {
+        position: absolute;
+        top: 0;
+        left: 100%;
+        background-color: black;
+        color:silver;
+    }
+}
+
+.sub-judul{
+    text-align: center;
 }

@@ -8,19 +8,36 @@
 
 {% block body %}
     <div class="container-fluid">
+        <!--navigasi-->
+        <div class="col-md-2 col-xs-6 col-sm-6 navigasi" role="navigation">
+            <ul class="nav nav-stacked">
+                <li class="active"><a href="#">Home</a></li>
+                <li class="dropdown dropdown-toggle">
+                    <a href="#">SMP<i class="glyphicon glyphicon-arrow-right"></i></a>
+                    <ul class="dropdown-menu sub-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li><a href="#">Separated link</a></li>
+                        <li><a href="#">One more separated link</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown dropdown-toggle">
+                    <a href="#">SMA<i class="glyphicon glyphicon-arrow-right"></i></a>
+                    <ul class="dropdown-menu sub-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li><a href="#">Separated link</a></li>
+                        <li><a href="#">One more separated link</a></li>
+                    </ul>
+                </li>
+                <li><a href="{{ path('_info') }}">Info</a></li>
+                <li><a href="#">Login</a></li>
+            </ul>
+        </div>
         <div class="row">
-            <!--navigasi-->
-            <div class="col-md-2 col-xs-12 col-sm-12 navigasi" role="navigation">
-                <ul class="nav nav-stacked">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#">SMP</a></li>
-                    <li><a href="#">SMA</a></li>
-                    <li><a href="{{ path('_info') }}">Info</a></li>
-                    <li><a href="#">Login</a></li>
-                </ul>
-            </div>
-            
-            <div class="col-md-10 col-xs-12 col-sm-12">
+            <div class="col-md-10 col-md-offset-2 col-xs-12 col-sm-12 konten">
                 <!--Carousel Here-->
                 <div id="myCarousel" class="carousel slide" data-ride="carousel">
                 <!-- Indicators -->
@@ -68,16 +85,25 @@
                 <!--Item Here-->
                 <div class="row">
                     <div class="col-md-offset-1 col-md-3 col-sm-12 col-xs-12">
-                        <h2>Sesuatu 1</h2>
-                        <img class="img-circle gambar" src="{{ asset('bundles/apositive/images/1.jpg') }}" alt="-">
+                        <h2 class="sub-judul">Sesuatu 1</h2>
+                        <img class="img-circle gambar img-responsive" src="{{ asset('bundles/apositive/images/1.jpg') }}" alt="-"><br>
+                        <span>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </span>
                     </div>
                     <div class="col-md-offset-1 col-md-3 col-sm-12 col-xs-12">
-                        <h2>Sesuatu 2</h2>
-                        <img class="img-circle gambar" src="{{ asset('bundles/apositive/images/2.jpg') }}" alt="-">
+                        <h2 class="sub-judul">Sesuatu 2</h2>
+                        <img class="img-circle gambar img-responsive" src="{{ asset('bundles/apositive/images/2.jpg') }}" alt="-"><br>
+                        <span>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </span>
                     </div>
                     <div class="col-md-offset-1 col-md-3 col-sm-12 col-xs-12">
-                        <h2>Sesuatu 3</h2>
-                        <img class="img-circle gambar" src="{{ asset('bundles/apositive/images/3.jpg') }}" alt="-">
+                        <h2 class="sub-judul">Sesuatu 3</h2>
+                        <img class="img-circle gambar img-responsive" src="{{ asset('bundles/apositive/images/3.jpg') }}" alt="-"><br>
+                        <span>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </span>
                     </div>
                 </div>
             </div>
