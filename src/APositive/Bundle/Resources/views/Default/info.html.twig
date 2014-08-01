@@ -1,0 +1,73 @@
+{% extends 'APositiveBundle::frontend.html.twig' %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('bundles/apositive/css/carousel.css') }}" type="text/css"/>
+{% endblock %}
+
+{% block title %}Info - A+ Learning{% endblock %}
+
+{% block body %}
+    <div class="container-fluid">
+        <!--navigasi-->
+        <div class="col-md-2 col-xs-6 col-sm-6 navigasi" role="navigation">
+            <ul class="nav nav-stacked">
+                <li>
+                    <img class="img-responsive logo" src="{{ asset('bundles/apositive/images/1.jpg') }}"/>
+                </li>
+                <li><a href="{{ path('_index') }}">Home</a></li>
+                <li class="dropdown dropdown-toggle">
+                    <a href="#">SMP<i class="glyphicon glyphicon-arrow-right"></i></a>
+                    <ul class="dropdown-menu sub-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li><a href="#">Separated link</a></li>
+                        <li><a href="#">One more separated link</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown dropdown-toggle">
+                    <a href="#">SMA<i class="glyphicon glyphicon-arrow-right"></i></a>
+                    <ul class="dropdown-menu sub-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li><a href="#">Separated link</a></li>
+                        <li><a href="#">One more separated link</a></li>
+                    </ul>
+                </li>
+                <li><a href="{{ path('_info') }}">Info</a></li>
+                <li><a href="#">Login</a></li>
+            </ul>
+        </div>
+        <div class="row">
+            <div class="col-md-10 col-md-offset-2 col-xs-12 col-sm-12 konten">
+                
+            </div>
+        </div>
+
+        <!--Footer-->
+        <div class="row">
+            <div class="col-md-12 col-xs-12 col-sm-12 footer">
+                <div class="col-md-3 col-md-offset-1">
+                    <h3 class="footer-caption">Judul</h3>
+                    <span></span>
+                    <span>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </span>
+                </div>
+                <div class="col-md-3 col-md-offset-1">
+                    <h3 class="footer-caption">About Us</h3>
+                    <span>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </span>
+                </div>
+                <div class="col-md-3 col-md-offset-1">
+                    <h3 class="footer-caption">Contact Information</h3>
+                    <span>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
