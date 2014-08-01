@@ -9,14 +9,33 @@ use Doctrine\ORM\Mapping as ORM;
  * @ORM\Table(name="subbab")
  */
 class SubBab{
+    
+    /**
+     * @ORM\Column(type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
     protected $id;
     
+    /**
+     * @ORM\Column(type="string", length=100)
+     */
     protected $nama;
     
+    /**
+     * @ORM\Column(type="string")
+     */
     protected $link;
     
+    /**
+     * @ORM\Column(type="text")
+     */
     protected $deskripsi;
     
+    /**
+     * @ManyToOne(targetEntity="Bab")
+     * @JoinColumn(name="id_bab", referencedColumnName="id")
+     **/
     protected $idBab;
 }
 
