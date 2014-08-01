@@ -17,6 +17,11 @@ body{
     width: 130px;
     height: 130px;
 }
+.logo{
+    margin: 0 auto;
+    width: 162px;
+    height: 162px;
+}
 
 .footer{
     margin-top: 20px;
@@ -28,6 +33,7 @@ body{
 }
 
 .konten{
+    min-height: 350px;
     z-index: 0;
 }
 
@@ -84,7 +90,7 @@ i.glyphicon-arrow-right{
 @media (min-width: 992px) {
     .col-md-2.navigasi{
         position: fixed;
-        top:50px;
+        top:0px;
         background-color: black;
         z-index: 100;
     }
@@ -108,4 +114,9 @@ i.glyphicon-arrow-right{
 
 .sub-judul{
     text-align: center;
+}
+
+.footer-caption{
+    display: block;
+    border-bottom: 1px solid wheat;
 }

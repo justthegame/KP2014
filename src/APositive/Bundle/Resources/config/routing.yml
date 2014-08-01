@@ -1,9 +1,4 @@
-a_positive_homepage:
-    path:     /index
-    defaults: { _controller: APositiveBundle:Default:index }
-
-info_page:
+_index:
     resource: "@APositiveBundle/Controller/DefaultController.php"
     type:     annotation
     prefix:   /index
-
