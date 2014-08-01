@@ -14,4 +14,14 @@ class DefaultController extends Controller
     {
         return $this->render('APositiveBundle:Default:about.html.twig', array());
     }
+    
+    public function loginAction()
+    {
+        return $this->render('APositiveBundle:BackEnd:login.html.twig', array());
+    }
+    
+    public function backendAction()
+    {
+        return $this->render('APositiveBundle:BackEnd:index.html.twig', array());
+    }
 }
