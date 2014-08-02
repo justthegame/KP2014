@@ -1,10 +1,7 @@
 a_positive_homepage:
-    path:     /index
-    defaults: { _controller: APositiveBundle:Default:index }
-
-a_positive_about:
-    path:     /about
-    defaults: { _controller: APositiveBundle:Default:about }
+    resource: "@APositiveBundle/Controller/DefaultController.php"
+    type:     annotation
+    prefix:   /index
 
 a_positive_backend_login:
     path:     /onestop/login

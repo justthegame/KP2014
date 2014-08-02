@@ -58,7 +58,7 @@ i.glyphicon-arrow-right{
     top:30%;
 }
 
-.col-xs-6.navigasi{
+.navigasi{
     position: relative;
     top:0px;
     background-color: white;
@@ -81,18 +81,12 @@ i.glyphicon-arrow-right{
 }
 
 @media (min-width: 992px) {
-    .col-sm-6.navigasi{
-        position: relative;
-        top:0px;
-        background-color: white;
-    }
-}
-@media (min-width: 992px) {
-    .col-md-2.navigasi{
-        position: fixed;
+    .navigasi{
         top:0px;
         background-color: black;
         z-index: 100;
+        width:162px;
+        margin-left:77px;
     }
     
     .nav li a{
@@ -109,6 +103,19 @@ i.glyphicon-arrow-right{
         left: 100%;
         background-color: black;
         color:silver;
+    }
+    
+    .affix{
+        position: fixed;
+    }
+
+    .affix-bottom{
+        position: absolute;
+    }
+    
+    .nav-affix{
+        padding-left: 0;
+        padding-right: 0;
     }
 }
 

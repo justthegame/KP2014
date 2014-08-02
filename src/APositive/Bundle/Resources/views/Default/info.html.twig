@@ -8,38 +8,40 @@
 
 {% block body %}
     <div class="container-fluid">
-        <!--navigasi-->
-        <div class="col-md-2 col-xs-6 col-sm-6 navigasi" role="navigation">
-            <ul class="nav nav-stacked">
-                <li>
-                    <img class="img-responsive logo" src="{{ asset('bundles/apositive/images/1.jpg') }}"/>
-                </li>
-                <li><a href="{{ path('_index') }}">Home</a></li>
-                <li class="dropdown dropdown-toggle">
-                    <a href="#">SMP<i class="glyphicon glyphicon-arrow-right"></i></a>
-                    <ul class="dropdown-menu sub-menu">
-                        <li><a href="#">Action</a></li>
-                        <li><a href="#">Another action</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li><a href="#">Separated link</a></li>
-                        <li><a href="#">One more separated link</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown dropdown-toggle">
-                    <a href="#">SMA<i class="glyphicon glyphicon-arrow-right"></i></a>
-                    <ul class="dropdown-menu sub-menu">
-                        <li><a href="#">Action</a></li>
-                        <li><a href="#">Another action</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li><a href="#">Separated link</a></li>
-                        <li><a href="#">One more separated link</a></li>
-                    </ul>
-                </li>
-                <li><a href="{{ path('_info') }}">Info</a></li>
-                <li><a href="#">Login</a></li>
-            </ul>
-        </div>
         <div class="row">
+            <!--navigasi-->
+            <div class="col-md-2 col-xs-6 col-sm-6 nav-affix" role="navigation">
+                <div class="navigasi" data-spy="affix" data-offset-bottom="330">
+                    <ul class="nav nav-stacked">
+                        <li>
+                            <img class="img-responsive logo" src="{{ asset('bundles/apositive/images/1.jpg') }}"/>
+                        </li>
+                        <li><a href="{{ path('_index') }}">Home</a></li>
+                        <li class="dropdown dropdown-toggle">
+                            <a href="#">SMP<i class="glyphicon glyphicon-arrow-right"></i></a>
+                            <ul class="dropdown-menu sub-menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li><a href="#">Separated link</a></li>
+                                <li><a href="#">One more separated link</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown dropdown-toggle">
+                            <a href="#">SMA<i class="glyphicon glyphicon-arrow-right"></i></a>
+                            <ul class="dropdown-menu sub-menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li><a href="#">Separated link</a></li>
+                                <li><a href="#">One more separated link</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Info</a></li>
+                        <li><a href="#">Login</a></li>
+                    </ul>
+                </div>
+            </div>
             <div class="col-md-10 col-md-offset-2 col-xs-12 col-sm-12 konten">
                 
             </div>
