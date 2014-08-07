@@ -13,7 +13,8 @@ class BackendController extends Controller {
     
     public function checkloginAction(){
         $manager = $this->getDoctrine()->getManager();
-        
+        $id = $manager->getRepository('APositiveBundle:Karyawan')
+                ->findBy(array(''));
         return $this->render('APositiveBundle:BackEnd:index.html.twig', array());
     }
 

@@ -20,6 +20,17 @@ class Karyawan {
     
     /**
      * @ORM\Column(type="string", length=20)
+     * @ORM\Column(unique=TRUE)
+     */
+    protected $username;
+    
+    /**
+     * @ORM\Column(type="string", length=20)
+     */
+    protected $password;
+    
+    /**
+     * @ORM\Column(type="string", length=20)
      */
     protected $noKTP;
 
@@ -40,11 +51,13 @@ class Karyawan {
     
     /**
      * @ORM\Column(type="string",length=20)
+     * @ORM\Column(nullable=TRUE)
      */
     protected $jabatan;
     
     /**
      * @ORM\Column(type="string")
+     * @ORM\Column(nullable=TRUE)
      */
     protected $foto;
     
@@ -237,5 +250,51 @@ class Karyawan {
     public function getAksesMateri()
     {
         return $this->aksesMateri;
+    }
+
+    /**
+     * Set username
+     *
+     * @param string $username
+     * @return Karyawan
+     */
+    public function setUsername($username)
+    {
+        $this->username = $username;
+
+        return $this;
+    }
+
+    /**
+     * Get username
+     *
+     * @return string 
+     */
+    public function getUsername()
+    {
+        return $this->username;
+    }
+
+    /**
+     * Set password
+     *
+     * @param string $password
+     * @return Karyawan
+     */
+    public function setPassword($password)
+    {
+        $this->password = $password;
+
+        return $this;
+    }
+
+    /**
+     * Get password
+     *
+     * @return string 
+     */
+    public function getPassword()
+    {
+        return $this->password;
     }
 }

@@ -30,6 +30,7 @@ class Member{
     
     /**
      * @ORM\Column(type="string", length=20)
+     * @ORM\Column(unique=TRUE)
      */
     protected $username;
     
