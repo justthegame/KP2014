@@ -3,10 +3,18 @@ a_positive_homepage:
     type:     annotation
     prefix:   /index
 
-a_positive_backend_login:
+a_positive_backend_login_page:
     path:     /onestop/login
-    defaults: { _controller: APositiveBundle:Default:login }
+    defaults: { _controller: APositiveBundle:Backend:loginpage }
+
+a_positive_backend_checklogin:
+    path:     /onestop/checklogin
+    defaults: { _controller: APositiveBundle:Backend:checklogin }
     
-a_positive_backend:
+a_positive_backend_register:
+    path:     /onestop/register
+    defaults: { _controller: APositiveBundle:Backend:register }
+    
+a_positive_backend_dashboard:
     path:     /onestop/
-    defaults: { _controller: APositiveBundle:Default:backend }
+    defaults: { _controller: APositiveBundle:Backend:index }

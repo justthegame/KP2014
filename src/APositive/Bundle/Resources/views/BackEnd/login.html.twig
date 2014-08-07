@@ -11,7 +11,7 @@
 {% block body %}
     <div id="container">
         <div id="loginbox">            
-            <form id="loginform" action="index.html">
+            <form id="loginform" action="{{ path('a_positive_backend_checklogin') }}">
                 <p>Enter username and password to continue.</p>
                 <div class="input-group">
                     <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span><input class="form-control" type="text" placeholder="Username" />
