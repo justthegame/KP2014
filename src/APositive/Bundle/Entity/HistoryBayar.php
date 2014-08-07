@@ -33,14 +33,14 @@ class HistoryBayar{
     protected $tanggalNonAktif;
     
     /**
-     * @ManyToOne(targetEntity="Member")
-     * @JoinColumn(name="id_member", referencedColumnName="id")
+     * @ORM\ManyToOne(targetEntity="Member")
+     * @ORM\JoinColumn(name="id_member", referencedColumnName="id")
      **/
     protected $idMember;
     
     /**
-     * @ManyToOne(targetEntity="Paket")
-     * @JoinColumn(name="id_paket", referencedColumnName="id")
+     * @ORM\ManyToOne(targetEntity="Paket")
+     * @ORM\JoinColumn(name="id_paket", referencedColumnName="id")
      **/
     protected $idPaket;
 }

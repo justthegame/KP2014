@@ -11,20 +11,20 @@ use Doctrine\ORM\Mapping as ORM;
 class AksesMateri{
     
     /**
-     * @ManyToOne(targetEntity="Karyawan")
-     * @JoinColumn(name="id_karyawan", referencedColumnName="id")
+     * @ORM\ManyToOne(targetEntity="Karyawan")
+     * @ORM\JoinColumn(name="karyawan_id", referencedColumnName="id")
      **/
     protected $idKaryawan;
     
     /**
-     * @ManyToOne(targetEntity="Pelajaran")
-     * @JoinColumn(name="id_pelajaran", referencedColumnName="id")
+     * @ORM\ManyToOne(targetEntity="Pelajaran")
+     * @ORM\JoinColumn(name="pelajaran_id", referencedColumnName="id")
      **/
     protected $idPelajaran;
     
     /**
-     * @ManyToOne(targetEntity="Kelas")
-     * @JoinColumn(name="id_kelas", referencedColumnName="id")
+     * @ORM\ManyToOne(targetEntity="Kelas")
+     * @ORM\JoinColumn(name="kelas_id", referencedColumnName="id")
      **/
     protected $idKelas;
     

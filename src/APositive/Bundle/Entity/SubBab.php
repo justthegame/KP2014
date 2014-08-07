@@ -33,8 +33,8 @@ class SubBab{
     protected $deskripsi;
     
     /**
-     * @ManyToOne(targetEntity="Bab")
-     * @JoinColumn(name="id_bab", referencedColumnName="id")
+     * @ORM\ManyToOne(targetEntity="Bab")
+     * @ORM\JoinColumn(name="id_bab", referencedColumnName="id")
      **/
     protected $idBab;
 }

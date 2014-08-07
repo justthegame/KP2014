@@ -23,14 +23,14 @@ class Bab{
     protected $nama;
     
     /**
-     * @ManyToOne(targetEntity="Kelas")
-     * @JoinColumn(name="id_kelas", referencedColumnName="id")
+     * @ORM\ManyToOne(targetEntity="Kelas")
+     * @ORM\JoinColumn(name="id_kelas", referencedColumnName="id")
      **/
     protected $idKelas;
     
     /**
-     * @ManyToOne(targetEntity="Pelajaran")
-     * @JoinColumn(name="id_pelajaran", referencedColumnName="id")
+     * @ORM\ManyToOne(targetEntity="Pelajaran")
+     * @ORM\JoinColumn(name="id_pelajaran", referencedColumnName="id")
      **/
     protected $idPelajaran;
     
