@@ -10,13 +10,13 @@ html, body {
     overflow:hidden;
 }
 body {
-	background-color: #444444;
-	background-image: -webkit-gradient(linear, 0 0%, 0 100%, from(#555555), to(#111111));
-	background-image: -webkit-linear-gradient(top, #555555 0%, #111111 100%);
-    background-image: -moz-linear-gradient(top, #555555 0%, #111111 100%);
-    background-image: -ms-linear-gradient(top, #555555 0%, #111111 100%);
-    background-image: -o-linear-gradient(top, #555555 0%, #111111 100%);
-    background-image: linear-gradient(top, #555555 0%, #111111 100%);
+	background-color: #2D335B;
+	background-image: -webkit-gradient(linear, 0 0%, 0 100%, from(#2D335B), to(#2D335B));
+	background-image: -webkit-linear-gradient(top, #2D335B 0%, #2D335B 100%);
+    background-image: -moz-linear-gradient(top, #2D335B 0%, #2D335B 100%);
+    background-image: -ms-linear-gradient(top, #2D335B 0%, #2D335B 100%);
+    background-image: -o-linear-gradient(top, #2D335B 0%, #2D335B 100%);
+    background-image: linear-gradient(top, #2D335B 0%, #2D335B 100%);
     background-position: fixed;
     padding: 0;
     margin: 0;
@@ -47,7 +47,7 @@ body {
 #loginbox {
     height: 230px;
 	background: #ffffff;
-    box-shadow: 0 0 4px #000000;
+    box-shadow: 0 0 4px #65697F;
     border-radius: 7px;
     overflow: hidden !important;
     text-align: center;
