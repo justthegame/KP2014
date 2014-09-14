@@ -11,13 +11,13 @@
 {% block body %}
     <div id="container">
         <div id="loginbox">            
-            <form id="loginform" action="{{ path('a_positive_backend_checklogin') }}">
+            <form id="loginform" action="{{ path('a_positive_backend_checklogin') }}" method="post">
                 <p>Enter username and password to continue.</p>
                 <div class="input-group">
-                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span><input class="form-control" type="text" placeholder="Username" />
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span><input class="form-control" type="text" placeholder="Username" name="username"/>
                 </div>
                 <div class="input-group">
-                    <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span><input class="form-control" type="password" placeholder="Password" />
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span><input class="form-control" type="password" placeholder="Password" name="password" />
                 </div>
                 <hr />
                 <div class="form-actions">

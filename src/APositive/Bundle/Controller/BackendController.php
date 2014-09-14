@@ -11,15 +11,23 @@ class BackendController extends Controller {
         return $this->render('APositiveBundle:BackEnd:login.html.twig', array());
     }
     
-    public function checkloginAction(){
+    public function checkloginAction($username, $password){
         $manager = $this->getDoctrine()->getManager();
         $id = $manager->getRepository('APositiveBundle:Karyawan')
-                ->findBy(array(''));
-        return $this->render('APositiveBundle:BackEnd:index.html.twig', array());
+                ->findBy(array('username' => $username, 'password' => $password));
+        if ($id)
+        {
+            return $this->forward('APositiveBundle:Backend:index', array(
+                'id' => $id->getID()));
+        }
+        else
+        {
+            return $this->render('APositiveBundle:BackEnd:login.html.twig', array('status'=>'error'));
+        }
     }
 
-    public function indexAction() {
-        return $this->render('APositiveBundle:BackEnd:index.html.twig', array());
+    public function indexAction($id) {
+        return $this->render('APositiveBundle:BackEnd:index.html.twig', array('id' => $id));
     }
 
     public function registerAction(){

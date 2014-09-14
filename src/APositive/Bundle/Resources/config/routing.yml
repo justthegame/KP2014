@@ -8,7 +8,7 @@ a_positive_backend_login_page:
     defaults: { _controller: APositiveBundle:Backend:loginpage }
 
 a_positive_backend_checklogin:
-    path:     /onestop/checklogin
+    path:     /onestop/checklogin/{username}/{password}
     defaults: { _controller: APositiveBundle:Backend:checklogin }
     
 a_positive_backend_register:
